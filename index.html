@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vik — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Vik<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting animate-fade-up">Hello, I'm</p>
+      <h1 class="hero-name animate-fade-up delay-1">Vik</h1>
+      <p class="hero-tagline animate-fade-up delay-2">Full-Stack Developer &amp; Creative Problem Solver</p>
+      <p class="hero-description animate-fade-up delay-3">
+        I build modern, performant web experiences that delight users and drive results.
+      </p>
+      <div class="hero-cta animate-fade-up delay-4">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-arrow"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <span>V</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a passionate developer with a love for creating elegant, efficient, and user-friendly digital experiences. With a strong foundation in both front-end and back-end technologies, I bring ideas to life through clean code and thoughtful design.
+          </p>
+          <p>
+            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and pushing the boundaries of what's possible on the web.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript / TypeScript</li>
+            <li>React / Vue.js</li>
+            <li>Tailwind CSS / SASS</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js / Express</li>
+            <li>Python / Django</li>
+            <li>REST APIs / GraphQL</li>
+            <li>PostgreSQL / MongoDB</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; DevOps</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Docker / CI/CD</li>
+            <li>AWS / Vercel</li>
+            <li>Figma / VS Code</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💡</div>
+          <h3>Other</h3>
+          <ul>
+            <li>Responsive Design</li>
+            <li>Performance Optimization</li>
+            <li>Accessibility (a11y)</li>
+            <li>Agile / Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <span class="project-image-text">Project 1</span>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack e-commerce solution with real-time inventory management, payment processing, and an intuitive admin dashboard.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <span class="project-image-text">Project 2</span>
+          </div>
+          <div class="project-info">
+            <h3>Task Management App</h3>
+            <p>A collaborative project management tool with drag-and-drop boards, real-time updates, and team communication features.</p>
+            <div class="project-tags">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <span class="project-image-text">Project 3</span>
+          </div>
+          <div class="project-info">
+            <h3>Weather Dashboard</h3>
+            <p>A beautiful weather application with location-based forecasts, interactive maps, and detailed meteorological data visualization.</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>API</span>
+              <span>Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">
+        Have a project in mind or just want to say hello? I'd love to hear from you.
+      </p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hello@example.com">hello@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>Location</h4>
+              <p>San Francisco, CA</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <h4>Social</h4>
+              <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Vik. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
