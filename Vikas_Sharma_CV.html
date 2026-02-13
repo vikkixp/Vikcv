@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Sharma - CV</title>
+    <style>
+        /* Print-friendly styles */
+        @media print {
+            body { margin: 0; padding: 0; }
+            .no-print { display: none !important; }
+            .cv-container { box-shadow: none; max-width: 100%; padding: 20px; }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .print-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #2563eb;
+            color: #fff;
+            text-align: center;
+            padding: 12px 20px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            font-size: 14px;
+        }
+
+        .print-bar button {
+            background: #fff;
+            color: #2563eb;
+            border: none;
+            padding: 8px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .print-bar button:hover {
+            background: #e0e7ff;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 70px auto 40px;
+            background: #fff;
+            padding: 48px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+
+        /* Header */
+        .cv-header {
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+
+        .cv-header h1 {
+            font-size: 32px;
+            color: #1e293b;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .cv-header .contact-info {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .cv-header .contact-info span {
+            margin: 0 8px;
+        }
+
+        /* Sections */
+        .cv-section {
+            margin-bottom: 24px;
+        }
+
+        .cv-section h2 {
+            font-size: 18px;
+            color: #2563eb;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+
+        .cv-section p {
+            font-size: 14px;
+            color: #475569;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 18px;
+        }
+
+        .experience-item .role {
+            font-weight: 600;
+            font-size: 15px;
+            color: #1e293b;
+        }
+
+        .experience-item .company {
+            font-size: 14px;
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        .experience-item .period {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 6px;
+        }
+
+        .experience-item ul {
+            margin-left: 20px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .experience-item ul li {
+            margin-bottom: 3px;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 12px;
+        }
+
+        .education-item .degree {
+            font-weight: 600;
+            font-size: 15px;
+            color: #1e293b;
+        }
+
+        .education-item .institution {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills-list span {
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="print-bar no-print">
+        <span>To save as PDF, click the button below or press <strong>Ctrl+P</strong> / <strong>⌘+P</strong></span>
+        <button onclick="window.print()">Save as PDF / Print</button>
+    </div>
+
+    <div class="cv-container">
+        <div class="cv-header">
+            <h1>Vikas Sharma</h1>
+            <div class="contact-info">
+                <span>📞 (91) 7985111256</span>
+                <span>|</span>
+                <span>✉️ vks9777@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Profile Summary</h2>
+            <p>
+                Dynamic and results-driven Sales Professional with over 4 years of experience in sales strategy,
+                client acquisition, lead generation, and account management. Proficient in both B2B and B2C
+                environments, with a proven track record of driving revenue growth through targeted outreach,
+                relationship building, and consultative selling techniques.
+            </p>
+        </div>
+
+        <div class="cv-section">
+            <h2>Work Experience</h2>
+
+            <div class="experience-item">
+                <div class="role">Business Development Associate</div>
+                <div class="company">Byjus (Think & Learn Pvt. Ltd.)</div>
+                <div class="period">Sales &amp; Business Development</div>
+                <ul>
+                    <li>Drove B2C sales through consultative selling and product demonstrations</li>
+                    <li>Achieved and exceeded monthly revenue targets consistently</li>
+                    <li>Managed end-to-end sales cycle from lead generation to deal closure</li>
+                    <li>Built strong client relationships to drive referrals and repeat business</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role">Academic Counselor / Sales Executive</div>
+                <div class="company">Extramarks Education</div>
+                <div class="period">Sales &amp; Client Acquisition</div>
+                <ul>
+                    <li>Conducted product presentations and counseled parents and students on learning solutions</li>
+                    <li>Generated leads through outbound calling, field visits, and school partnerships</li>
+                    <li>Maintained CRM records and tracked sales pipeline for accurate forecasting</li>
+                    <li>Collaborated with marketing teams to execute regional campaigns</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="role">Sales Executive / Insurance Advisor</div>
+                <div class="company">SBI Life Insurance</div>
+                <div class="period">Insurance Sales</div>
+                <ul>
+                    <li>Sold life insurance products through bank channel and direct client meetings</li>
+                    <li>Provided financial planning advice and customized insurance solutions</li>
+                    <li>Developed and maintained a portfolio of high-value clients</li>
+                    <li>Achieved top-performer recognition for exceeding quarterly sales targets</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <div class="degree">MBA in Marketing</div>
+                <div class="institution">Specialization in Marketing Management</div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Bachelor of Arts (BA)</div>
+                <div class="institution">Undergraduate Degree</div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Intermediate &amp; High School</div>
+                <div class="institution">UP Board</div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span>Sales Strategy</span>
+                <span>Client Relationship Management</span>
+                <span>Lead Generation</span>
+                <span>CRM Tools</span>
+                <span>Negotiation</span>
+                <span>Market Research</span>
+                <span>Team Collaboration</span>
+                <span>Communication</span>
+                <span>B2B &amp; B2C Sales</span>
+                <span>Account Management</span>
+                <span>Consultative Selling</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
