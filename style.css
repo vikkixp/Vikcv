@@ -1,0 +1,367 @@
+/* ============================================
+   ATS-Friendly CV/Resume — Stylesheet
+   Color Scheme: Dark Navy + White + Accent
+   Font: Inter (Google Fonts)
+   ============================================ */
+
+/* --- CSS Variables --- */
+:root {
+    --color-navy: #1a2744;
+    --color-navy-light: #2c3e5a;
+    --color-accent: #3b82f6;
+    --color-accent-dark: #2563eb;
+    --color-text: #1f2937;
+    --color-text-light: #4b5563;
+    --color-bg: #f8fafc;
+    --color-white: #ffffff;
+    --color-border: #e2e8f0;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--color-accent-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Download Button Bar --- */
+.download-bar {
+    text-align: center;
+    padding: 16px;
+    background: var(--color-navy);
+}
+
+.btn-download {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-white);
+    background: var(--color-accent);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-download:hover {
+    background: var(--color-accent-dark);
+}
+
+/* --- Resume Container --- */
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: 40px 48px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Header --- */
+.header {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 3px solid var(--color-navy);
+    margin-bottom: 28px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.headline {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-accent-dark);
+    margin-bottom: 16px;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+.contact-list a {
+    color: var(--color-text-light);
+}
+
+.contact-list a:hover {
+    color: var(--color-accent-dark);
+}
+
+/* --- Sections --- */
+.section {
+    margin-bottom: 24px;
+}
+
+.section h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--color-border);
+    margin-bottom: 14px;
+}
+
+.section > p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+/* --- Skills List --- */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills-list li {
+    font-size: 0.88rem;
+    background: #eef2ff;
+    color: var(--color-navy-light);
+    padding: 5px 14px;
+    border-radius: 4px;
+    border: 1px solid #dbeafe;
+}
+
+/* --- Experience & Education Items --- */
+.experience-item,
+.education-item {
+    margin-bottom: 20px;
+}
+
+.experience-item:last-child,
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-header {
+    margin-bottom: 8px;
+}
+
+.experience-header h3 {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 2px;
+}
+
+.experience-header .company {
+    display: block;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--color-accent-dark);
+}
+
+.experience-header .duration {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-top: 2px;
+}
+
+.experience-item ul,
+.section > ul {
+    padding-left: 20px;
+    margin-top: 4px;
+}
+
+.experience-item li,
+.section > ul li {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 4px;
+    color: var(--color-text);
+}
+
+.education-item p {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+}
+
+/* --- Languages & Personal Details --- */
+.languages-list,
+.personal-details {
+    list-style: none;
+    padding-left: 0;
+}
+
+.languages-list li,
+.personal-details li {
+    font-size: 0.92rem;
+    padding: 3px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.languages-list li:last-child,
+.personal-details li:last-child {
+    border-bottom: none;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 640px) {
+    .resume {
+        padding: 24px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .skills-list {
+        gap: 6px;
+    }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+    /* Hide non-print elements */
+    .no-print {
+        display: none !important;
+    }
+
+    /* Reset backgrounds and shadows */
+    body {
+        background: white;
+        color: #000;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+
+    .resume {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    /* Ensure links show URL for print */
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* Section headings */
+    .section h2 {
+        color: #1a2744;
+        border-bottom-color: #ccc;
+        font-size: 11pt;
+    }
+
+    .header {
+        border-bottom-color: #1a2744;
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+    }
+
+    .header h1 {
+        font-size: 18pt;
+        color: #1a2744;
+    }
+
+    .headline {
+        font-size: 11pt;
+        color: #333;
+    }
+
+    .contact-list {
+        font-size: 9pt;
+        gap: 4px 16px;
+    }
+
+    /* Compact spacing for print */
+    .section {
+        margin-bottom: 12px;
+    }
+
+    .experience-item {
+        margin-bottom: 10px;
+    }
+
+    .experience-header h3 {
+        font-size: 10.5pt;
+    }
+
+    .experience-header .company,
+    .experience-header .duration {
+        font-size: 9.5pt;
+    }
+
+    .experience-item li,
+    .section > ul li,
+    .section > p {
+        font-size: 9.5pt;
+        line-height: 1.45;
+    }
+
+    .skills-list li {
+        font-size: 9pt;
+        background: none;
+        border: 1px solid #ccc;
+        padding: 2px 8px;
+    }
+
+    .languages-list li,
+    .personal-details li {
+        font-size: 9.5pt;
+    }
+
+    /* Avoid page breaks inside sections */
+    .section,
+    .experience-item,
+    .education-item {
+        page-break-inside: avoid;
+    }
+
+    /* Page margins */
+    @page {
+        margin: 0.6in 0.5in;
+    }
+}
