@@ -24,7 +24,7 @@ A modern, professional single-page portfolio website for **Vikas Sharma**, a Sal
 ├── index.html              # Main HTML file
 ├── styles.css              # All styles with CSS custom properties
 ├── script.js               # Interactions, animations, particles
-├── Vikas_Sharma_CV.pdf     # Downloadable CV (placeholder)
+├── Vikas_Sharma_CV.html    # CV (opens in browser, print/save as PDF)
 └── README.md               # This file
 ```
 
@@ -91,7 +91,7 @@ The form currently uses a `mailto:` fallback. To enable a real form backend:
 
 ### CV Download
 
-Replace `Vikas_Sharma_CV.pdf` with your actual CV file.
+The CV is served as `Vikas_Sharma_CV.html` and opens in a new tab. Users can print or save as PDF from their browser.
 
 ## 🌐 Deploy on GitHub Pages
 
