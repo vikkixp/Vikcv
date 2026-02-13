@@ -145,17 +145,6 @@ img {
     justify-content: space-between;
 }
 
-.nav-logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--text-primary);
-    letter-spacing: -0.02em;
-}
-
-.nav-logo:hover {
-    color: var(--text-primary);
-}
-
 .nav-menu {
     display: flex;
     align-items: center;
