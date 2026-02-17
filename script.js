@@ -87,10 +87,10 @@
     // Typing Animation
     // ==========================================
     const phrases = [
-        'Sales & Client Acquisition Specialist',
-        'B2B & B2C Sales Expert',
-        'Revenue Growth Driver',
-        'Lead Generation Strategist',
+        'Social Media Designer',
+        'Brand Identity Creator',
+        'Marketing Materials Expert',
+        'Visual Content Designer',
     ];
 
     let phraseIndex = 0;
